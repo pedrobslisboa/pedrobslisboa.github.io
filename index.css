@@ -95,6 +95,10 @@ main {
   font-size: 90px;
   margin: 0;
 }
+.email{
+   margin: 20px 10%;
+}
+
 .nav-bar {
   color:white;
  text-align: center;
