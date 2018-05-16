@@ -45,13 +45,14 @@ aboutLink.click(function(){
     homeLinkShow();
   });
     validAbout = 1;
-  } else{
+  } else if(validAbout == 1 && validPortfolio == 2){
+      main.transition({y:'0px'});
+      validPortfolio = 1; 
+  } else {
     clickHome();
   }
   
-  
 });
-
 
 contactClose.click(contactHide);
 contactLink.click(contactShow);
