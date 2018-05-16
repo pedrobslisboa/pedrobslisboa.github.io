@@ -3,6 +3,7 @@
  * - All our useful JS goes here, awesome!
  */
 
+let $$ = document.querySelectorAll.bind(document);
 let bio = $(".bio");
 let about = $(".about");
 let responsive = $(".responsive");
@@ -21,7 +22,19 @@ let homeHeight = home.height();
 let validPortfolio = 1;
 let aboutLink = $('.about-link');
 let validAbout = 0;
+let description = $(".description");
+let project =  $(".project");
 
+console.log(project);
+
+$(".project").each(function(event){
+
+  $(this).hover(function(e){
+    $(this).children().children(".description").stop().fadeIn();
+  },function(){
+    $(this).children().children(".description").stop().fadeOut();
+  });
+});
 
 aboutLink.click(function(){
   if(validAbout == 0){
@@ -34,7 +47,6 @@ aboutLink.click(function(){
     validAbout = 1;
   } else{
     clickHome();
-
   }
   
   
