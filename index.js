@@ -47,7 +47,7 @@ function clickHome(){
   homeLinkHide();
   validPortfolio = 1;
   main.transition({y:'0px'});
-  if(validAbout == 0 ){
+  if(validAbout == 0 && validPortfolio == 2){
     nameWork.fadeToggle(function(){
     about.fadeToggle();
     homeLinkShow();
