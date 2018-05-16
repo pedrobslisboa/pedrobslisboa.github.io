@@ -24,8 +24,19 @@ let validAbout = 0;
 
 
 aboutLink.click(function(){
+  if(validAbout == 0){
+    main.transition({y:'0px'});
+    nameWork.fadeToggle(function(){
+    about.fadeToggle();
+    validPortfolio = 1;
+    homeLinkShow();
+  });
+    validAbout = 1;
+  } else{
+    clickHome();
+
+  }
   
-  clickHome();
   
 });
 
@@ -47,19 +58,10 @@ function clickHome(){
   homeLinkHide();
   validPortfolio = 1;
   main.transition({y:'0px'});
-  if(validAbout == 0 && validPortfolio == 2){
-    nameWork.fadeToggle(function(){
-    about.fadeToggle();
-    homeLinkShow();
+  about.fadeOut(function(){
+  nameWork.fadeIn();
   });
-    validAbout = 1;
-  } else{
-    homeLinkHide();
-    about.fadeToggle(function(){
-    nameWork.fadeToggle();
-    });
-    validAbout = 0;
-  } 
+  validAbout = 0;
   }
 function clickPortfolio() {
   let portfolioHeight = portfolioBody.height();
