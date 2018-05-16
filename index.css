@@ -200,7 +200,10 @@ img{
   right:0;
   box-sizing: border-box;
 }
-
+.submit{
+  margin-top:20px;
+  width:100px;
+}
 .expand{
   width:3px;
   height:15px;
@@ -317,3 +320,5 @@ form{
     align-items: flex-start; 
   }
 }
+
+
