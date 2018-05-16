@@ -291,8 +291,8 @@ form{
   .bio{
     left:10%;
     right:40%;
-    
   }
+  
 }
 
 @media only screen and (max-width:600px){
@@ -310,7 +310,7 @@ form{
   box-sizing:border-box;
   }
   .album{
-    padding-top:40px;
+    padding-top:10px;
     width:100%;
   }
   .bio{
@@ -318,6 +318,19 @@ form{
     left:50px;
     right:50px;
     align-items: flex-start; 
+  }
+  .social-medias{
+    width:auto;
+    top:20px;
+    text-align:center;
+    left:50px;
+    right:50px;
+    bottom:auto;
+    display:inline-block;
+  }
+  .social-medias a{
+    
+    text-align:center;
   }
 }
 
