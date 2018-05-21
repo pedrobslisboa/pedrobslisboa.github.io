@@ -35,6 +35,8 @@ let linkedin = $('.linkedin');
 let social = $('.social');
 let info = $('.info');
 
+
+
 let projects = [{imgUrl:'https://image.ibb.co/f93rAd/Captura_de_Tela_2018_05_16_a_s_14_32_32.jpg',url:'https://codepen.io/pedrobslisboa/full/xjPjLj/'},{imgUrl:'https://image.ibb.co/f93rAd/Captura_de_Tela_2018_05_16_a_s_14_32_32.jpg',url:'https://codepen.io/pedrobslisboa/full/xjPjLj/'}];
 
 
@@ -92,7 +94,9 @@ function hoverInfo(){
   
   let infoThis = $(this);
   let cardImageThis = infoThis.parents('.card').children('.card-image');
-  
+  let cardImageHeight = infoThis.parents('.card').width();
+  let infoCardHeight = cardImageHeight - infoThis.parents('.card').children('.info-card').position().top;
+ console.log(cardImageHeight);
   
   $(this).children('.info-off').css({
     display:'none'
@@ -103,7 +107,7 @@ function hoverInfo(){
   
   cardImageThis.animate({
 
-    top: '-200px'
+    top: -infoCardHeight + 'px'
     
   });
   
