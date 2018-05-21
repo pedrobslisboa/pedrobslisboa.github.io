@@ -474,14 +474,14 @@ form{
   }
   .bio{
     font-size:1em;
-    top:70px;
+    top:120px;
     left:50px;
     right:50px;
     align-items: flex-start; 
   }
   .social-medias{
     width:auto;
-    top:20px;
+    top:50px;
     text-align:center;
     left:50px;
     right:50px;
