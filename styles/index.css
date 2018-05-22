@@ -411,6 +411,7 @@ form{
   display:flex;
   margin-right:0.5em;
   align-items:center;
+	cursor:pointer;
 }
 
 .info-on{
