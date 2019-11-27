@@ -1,0 +1,6 @@
+[submodule "reason_chronometer"]
+	path = reason_chronometer
+	url = git@github.com:pedrobslisboa/reason-chronometer.git
+[submodule "chronometer"]
+	path = chronometer
+	url = git@github.com:pedrobslisboa/reason-chronometer.git
